@@ -95,6 +95,7 @@ section{
   margin-top: 20px;
   z-index: 99999;
   background-color: #112240;
+  text-align: left;
 }
 .p-list{
   text-align: right;

@@ -37,12 +37,16 @@
   font-size: 17px;
   line-height: 1.5;
 }
-.bref img{
+.image-parent{
+  max-width: 400px;
+  max-height: 400px;
+}
+.image-parent img{
   border-radius: 50%;
   border: 2px solid #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  max-width: 400px;
-  max-height: 400px;
+  width: 100%;
+  height: 100%;
   transform: translateY(-11%);
   margin-left: 40px;
   object-fit: cover;
@@ -69,12 +73,14 @@
       flex-direction: column;
       margin-left: 10px;
     }
-    .bref img{
+    .image-parent{
+      width: 280px;
+      height: 280px;
+    }
+    .image-parent img{
       border-radius: 50%;
       border: 2px solid #fff;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      width: 280px;
-      height: 280px;
       transform: translateY(11%);
       transform: translateX(-10%);
       margin-left: 0;
@@ -101,12 +107,14 @@
     flex-direction: column;
     margin-left: 10px;
   }
-  .bref img{
+  .image-parent{
+    width: 280px;
+    height: 280px;
+  }
+  .image-parent img{
     border-radius: 50%;
     border: 2px solid #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 280px;
-    height: 280px;
     transform: translateY(11%);
     transform: translateX(-5%);
     margin-left: 0;
@@ -133,12 +141,14 @@
   .about .bref{
     flex-direction: column;
   }
-  .bref img{
+  .image-parent{
+    width: 350px;
+    height: 350px;
+  }
+  .image-parent img{
     border-radius: 50%;
     border: 2px solid #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 350px;
-    height: 350px;
     transform: translateY(11%);
     margin-left: 20px;
     object-fit: cover;
@@ -155,12 +165,14 @@
     width:300px;
     font-size: 15px;
   }
-  .bref img{
+  .image-parent{
+    width: 200px;
+    height: 200px;
+  }
+  .image-parent img{
     border-radius: 10px;
     border: 2px solid #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    width: 200px;
-    height: 200px;
     transform: translateY(2%);
     margin-left: 20px;
     object-fit: cover;
@@ -176,14 +188,16 @@
     min-width:300px;
     font-size: 15px;
   }
-  .bref img{
-    border-radius: 10px;
-    border: 2px solid #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  .image-parent{
     max-width: 300px;
     max-height: 300px;
     min-width: 200px;
     min-height: 200px;
+  }
+  .image-parent img{
+    border-radius: 10px;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transform: translateY(2%);
     margin-left: 20px;
     object-fit: cover;
