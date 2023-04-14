@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
 
   downloadResume() {
     const link = document.createElement('a');
-    const resume = 'https://drive.google.com/file/d/1dQXPhOf87jk-KRzEM3S_YXCZegHMRgY2/view?usp=sharing'
+    const resume = 'https://drive.google.com/file/d/1xeQ_UY1q4Z5kkn_8xhp5BuAVg9j46cKb/view?usp=sharing'
     link.setAttribute('href', resume);
     link.setAttribute('download', 'resume.pdf');
     link.setAttribute('target', '_blank')
