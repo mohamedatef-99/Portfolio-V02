@@ -115,6 +115,7 @@ section{
   display: flex;
   flex-direction: column;
   position: absolute;
+  width: 600px;
   z-index: 99999;
 }
 .h-man h3{
@@ -143,6 +144,7 @@ section{
   left: 0;
   z-index: 99999;
   background-color: #112240;
+  
 }
 .ih-man{
   position: relative;
@@ -180,6 +182,9 @@ section{
 .man-l a{
   color: #CCD6F6;
   font-size: 25px;
+}
+.man-l a i{
+  margin-top: 20px;
 }
 .tools{
   color:#60F6D3;

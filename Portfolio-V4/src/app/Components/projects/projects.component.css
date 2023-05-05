@@ -98,6 +98,25 @@ section{
   padding-top: 25px;
 }
 
+.more-project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 25px;
+}
+.more{
+  text-decoration: none;
+  border: 2px solid #60F6D3;
+  color: #60F6D3;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+.more:hover{
+  background-color: rgba(96, 246, 211, 0.5);
+}
+
 
 /* Media */
 @media only screen and (max-width: 340px){
@@ -240,3 +259,4 @@ section{
     transform: translateY(-5px);
   }
 }
+
