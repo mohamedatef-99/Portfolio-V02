@@ -26,7 +26,7 @@ import { MatIconModule } from '@angular/material/icon';
     SkillsComponent,
     ContactComponent,
     ProjectsComponent,
-    WorkComponent
+    WorkComponent,
   ],
   imports: [
     BrowserModule,

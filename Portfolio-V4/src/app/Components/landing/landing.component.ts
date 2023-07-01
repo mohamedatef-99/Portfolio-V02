@@ -38,8 +38,8 @@ export class LandingComponent implements OnInit {
         setTimeout(erase, speed);
       } else {
         if (this.text === 'Software Engineer') {
-          this.text = 'Web Developer';
-        } else if (this.text === 'Web Developer') {
+          this.text = 'MEAN Stack Developer';
+        } else if (this.text === 'MEAN Stack Developer') {
           this.text = 'Freelancer';
         } else {
           this.text = 'Software Engineer';

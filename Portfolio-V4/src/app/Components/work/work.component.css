@@ -103,6 +103,8 @@ section{
 .list{
   list-style: none;
   display: flex;
+  padding: 0;
+  flex-wrap: wrap;
   position: relative;
   color: #929DBB;
   text-align: right;
@@ -144,7 +146,7 @@ section{
   left: 0;
   z-index: 99999;
   background-color: #112240;
-  
+
 }
 .ih-man{
   position: relative;
@@ -189,17 +191,73 @@ section{
 .tools{
   color:#60F6D3;
 }
+
+
+.projects a{
+  text-decoration: none;
+}
+.projects .pro-1:hover{
+  transform: translateY(-10px);
+}
+.projects .pro-1:hover h2{
+  color: #60F6D3;
+}
+.pro-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 330px;
+  padding: 25px;
+  background-color: #112240;
+  transition: 0.3s ease;
+}
+.link a i{
+  color: #60F6D3;
+  font-size: 25px;
+}
+.link a .github{
+  color: #A8B2D1;
+  margin-right: 20px;
+}
+.link a .out-link{
+  color: #A8B2D1;
+}
+.link a .github:hover,
+.link a .out-link:hover{
+  color: #60F6D3;
+}
+
+.pro-head h2{
+  color: #CCD6F6;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.pro-head p{
+  color: #A8B2D1;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.pro-head .span{
+  display: flex;
+  justify-content: space-between;
+  color: #60F6D3;
+  padding-top: 25px;
+}
+
+
 /* Media */
 @media only screen and (max-width: 340px){
   .head h2{
     margin-left: 10px;
-    font-size: 11px;
+    font-size: 16px;
   }
   .head span{
-    font-size: 9px;
+    font-size: 13px;
   }
   .line{
-    width: 90px;
+    /* width: 90px; */
+    display: none;
   }
   .projects{
     margin-left: 15px;
@@ -259,13 +317,14 @@ section{
 @media only screen and (min-width: 341px) and (max-width: 480px) {
   .head h2{
     margin-left: 10px;
-    font-size: 12px;
+    font-size: 17px;
   }
   .head span{
-    font-size: 8px;
+    font-size: 13px;
   }
   .line{
-    width: 90px;
+    /* width: 90px; */
+    display: none;
   }
   .projects{
     margin-left: 20px;

@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
   }
+
   body{
     margin: 0;
     padding: 0;
@@ -18,24 +19,35 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  
+
   .logo {
     padding-left: 5%;
     animation: fadeInLeft 1s  both;
   }
-  .logo a {
-    text-decoration: none;
+  .logo span{
+    /* text-decoration: none; */
     font-size: 1.5rem;
-    letter-spacing: 5px;
-    color:#CCD6F6;
+    letter-spacing: 10px;
+    transition: all 0.5s ease;
   }
-  .logo a span{
+  .logo .p,
+  .logo .o,
+  .logo .r,
+  .logo .t{
     color: #64FFDA;
   }
-  .logo a:hover{
-    opacity: 0.5;
+  .logo .f,
+  .logo .oo,
+  .logo .l,
+  .logo .i{
+    color: #CCD6F6;
   }
-  
+  .logo span:hover{
+    cursor: pointer;
+    transform: translateY(-7px);
+    display: inline-block;
+  }
+
   .list {
     display: flex;
     justify-content: center;
@@ -46,11 +58,11 @@
     padding-right: 3%;
     animation: upToDown 1s both;
   }
-  
+
   .list li {
     margin: 0 15px;
   }
-  
+
   .list a{
     text-decoration: none;
     font-size: 15px;
@@ -63,7 +75,7 @@
   }
   .list a:hover{
     color: #64FFDA;
-  } 
+  }
   .resume {
     border: 1px solid #64FFDA;
     background-color: #0A192F;
@@ -74,13 +86,13 @@
   }
   .resume:hover{
     background-color: rgba(96, 246, 211, 0.3);
-  } 
-  
+  }
+
   .burger-menu {
     display: none;
     margin-right: 15px;
   }
-  
+
   .burger-menu .bar{
     color: #64FFDA;
     font-size: 20px;
@@ -95,7 +107,7 @@
     position: relative;
     cursor: pointer;
   }
-  
+
   @keyframes fadeInLeft {
     from {
       opacity: 0;
@@ -106,7 +118,7 @@
       transform: translateX(0);
     }
   }
-  
+
   @keyframes upToDown {
     0%{
       opacity: 0;
@@ -117,10 +129,10 @@
       transform: translateY(0)
     }
   }
-  
-  
-  
-  
+
+
+
+
   @media only screen and (max-width: 768px) {
     .list {
       display: none;
@@ -138,17 +150,17 @@
       justify-content: center;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
-  
+
     .list.show-menu {
       display: flex;
     }
-  
+
     .list li {
       margin: auto 0;
       align-items: center;
       text-align: center;
     }
-  
+
     .burger-menu {
       display: flex;
     }
@@ -156,7 +168,7 @@
       display: block;
     }
   }
-  
+
   @media only screen and (max-width: 480px) {
     .list {
       display: none;
@@ -174,17 +186,17 @@
       justify-content: center;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     }
-  
+
     .list.show-menu {
       display: flex;
     }
-  
+
     .list li {
       margin: auto 0;
       align-items: center;
       text-align: center;
     }
-  
+
     .burger-menu {
       display: flex;
     }

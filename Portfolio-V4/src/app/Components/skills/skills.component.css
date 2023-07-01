@@ -21,101 +21,55 @@ section{
 }
 
 .skills{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10px;
-  position: relative;
-  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
   margin-top: 50px;
 }
 
-.html, .css, .js, .bootstrap, .sass, .vue, .typescript, .angular, .python, .c{
-  margin-left: 15px;
-}
-.skills img{
-  width: 50px;
+.skills span{
+  width: 200px;
   height: 50px;
-  margin-right: 15px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.skills h2{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #6E7A97;
-  padding-top: 13px;
+  font-size: 20px;
+  border-radius: 11px;
+  background: linear-gradient(145deg, #0b1b32, #09172a);
+  box-shadow:  5px 5px 10px #081323,
+              -5px -5px 10px #0d1f3b;
 }
-.skills h2:hover{
+.skills span:hover{
   color: #60F6D3;
 }
 
-
 /* Media */
 @media only screen and (max-width: 340px){
-  .skills{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-gap: 10px;
-  }
-  .skills h2{
-    font-size: 15px;
+  .skills span{
+    width: 340px
   }
   .head h2{
-    font-size: 17px
+    font-size: 25px
   }
   .head span{
-    font-size: 10px;
-  }
-  .skills img{
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
+    font-size: 20px;
   }
 }
 /* CSS styles for smartphones */
 @media only screen and (min-width: 341px) and (max-width: 480px) {
-  .skills{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-gap: 10px;
-  }
-  .skills h2{
-    font-size: 15px;
-  }
   .head h2{
-    font-size: 20px
+    font-size: 25px
   }
   .head span{
-    font-size: 12px;
+    font-size: 20px;
   }
-  .skills img{
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+  .skills span{
+    width: 400px
   }
 }
 
-/* CSS styles for tablets and mid-sized screens */
-@media only screen and (min-width: 481px) and (max-width: 768px) {
-  .skills{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 10px;
-  }
-  .skills h2{
-    font-size: 17px;
-  }
-  .skills img{
-    width: 35px;
-    height: 35px;
-    margin-right: 10px;
-  }
-}
-
-/* CSS styles for larger tablets and small laptops */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-
-}

@@ -13,7 +13,6 @@ body{
   animation: rotateDeca 5s linear infinite;
 }
 
-
 .child {
   position: absolute;
   width: 10px;

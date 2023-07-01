@@ -68,12 +68,12 @@
   display: inline-block;
   background-color: #ccc;
   width: 2px;
-  height: 35px;
-  margin-left: 2px;
+  height: 20px;
+  margin-left: 5px;
   animation: blink 1s infinite;
 }
 .main .bio {
-  width: 900px;
+  /* width: 900px; */
   margin-top: 0;
 }
 .main .bio p{
@@ -163,7 +163,7 @@
     transform: translateY(10%);
   }
   .main .bio {
-    width: 250px;
+    /* width: 250px; */
     margin-top: 0;
   }
   .main .bio p{
@@ -189,11 +189,11 @@
     margin-top: 30px;
   }
   .cursor {
-    height: 20px;
+    /* height: 20px; */
     transform: translateY(10%);
   }
   .main .bio {
-    width: 300px;
+    /* width: 300px; */
     margin-top: 0;
   }
   .main .bio p{
@@ -220,11 +220,11 @@
     margin-top: 30px;
   }
   .cursor {
-    height: 20px;
+    /* height: 20px; */
     transform: translateY(10%)
   }
   .main .bio {
-    width: 400px;
+    /* width: 400px; */
     margin-top: 0;
   }
   .main .bio p{
@@ -251,11 +251,11 @@
     margin-top: 60px;
   }
   .cursor {
-    height: 20px;
+    /* height: 20px; */
     transform: translateY(10%)
   }
   .main .bio {
-    width: 600px;
+    /* width: 600px; */
     margin-top: 0;
   }
   .main .bio p{
@@ -274,11 +274,11 @@
     margin-top: 30px;
   }
   .main .name .type{
-    font-size: 30px;
+    /* font-size: 30px; */
     margin-top: 60px;
   }
   .main .bio {
-    width: 650px;
+    /* width: 650px; */
     margin-top: 0;
   }
   .main .bio p{

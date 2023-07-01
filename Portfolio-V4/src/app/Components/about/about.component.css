@@ -37,6 +37,9 @@
   font-size: 17px;
   line-height: 1.5;
 }
+.bref .mean{
+  color: #64FFDA;
+}
 .image-parent{
   max-width: 400px;
   max-height: 400px;
