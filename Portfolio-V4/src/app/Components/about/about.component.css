@@ -1,24 +1,23 @@
-.about{
+.about {
   margin-top: 7%;
   margin-left: 10%;
   padding-top: 100px;
   opacity: 0;
 }
-.about h2
-{
-  color: #CCD6F6;
+.about h2 {
+  color: #ccd6f6;
   font-size: 30px;
   margin-left: 20px;
 }
-.head{
+.head {
   display: flex;
   align-items: center;
 }
-.head h2 span{
-  color: #64FFDA;
+.head h2 span {
+  color: #64ffda;
   font-size: 25px;
 }
-.about .line{
+.about .line {
   width: 440px;
   height: 1px;
   background-color: #223453;
@@ -26,25 +25,25 @@
   display: block;
 }
 
-.about .bref{
+.about .bref {
   display: flex;
   margin-left: 45px;
   margin-top: 20px;
 }
-.bref p{
-  max-width:600px;
-  color: #535F7A;
+.bref .info {
+  max-width: 600px;
+  color: #535f7a;
   font-size: 17px;
   line-height: 1.5;
 }
-.bref .mean{
-  color: #64FFDA;
+.bref .colored {
+  color: #64ffda;
 }
-.image-parent{
+.image-parent {
   max-width: 400px;
   max-height: 400px;
 }
-.image-parent img{
+.image-parent img {
   border-radius: 50%;
   border: 2px solid #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -55,66 +54,69 @@
   object-fit: cover;
 }
 
-
 /* Media */
-@media only screen and (max-width: 340px){
-  .about h2
-  {
+@media only screen and (max-width: 340px) {
+  .about h2 {
     font-size: 15px;
   }
-  .head h2 span{
+  .head h2 span {
     font-size: 10px;
   }
-    .about .line{
-      width: 140px;
-    }
-    .bref p{
-      width:250px;
-      font-size: 13px;
-    }
-    .about .bref{
-      flex-direction: column;
-      margin-left: 10px;
-    }
-    .image-parent{
-      width: 280px;
-      height: 280px;
-    }
-    .image-parent img{
-      border-radius: 50%;
-      border: 2px solid #fff;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-      transform: translateY(11%);
-      transform: translateX(-10%);
-      margin-left: 0;
-      object-fit: cover;
-    }
-}
-/* CSS styles for smartphones */
-@media only screen and (min-width: 341px) and (max-width: 480px) {
-  .about h2
-{
-  font-size: 15px;
-}
-.head h2 span{
-  font-size: 10px;
-}
-  .about .line{
+  .about .line {
     width: 140px;
   }
-  .bref p{
-    width:280px;
+  .bref .info {
+    width: 250px;
     font-size: 13px;
   }
-  .about .bref{
+  .bref .info h1 {
+    font-size: 18px;
+  }
+  .about .bref {
     flex-direction: column;
     margin-left: 10px;
   }
-  .image-parent{
+  .image-parent {
     width: 280px;
     height: 280px;
   }
-  .image-parent img{
+  .image-parent img {
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(11%);
+    transform: translateX(-10%);
+    margin-left: 0;
+    object-fit: cover;
+  }
+}
+/* CSS styles for smartphones */
+@media only screen and (min-width: 341px) and (max-width: 480px) {
+  .about h2 {
+    font-size: 15px;
+  }
+  .head h2 span {
+    font-size: 10px;
+  }
+  .about .line {
+    width: 140px;
+  }
+  .bref .info {
+    width: 280px;
+    font-size: 13px;
+  }
+  .bref .info h1 {
+    font-size: 20px;
+  }
+  .about .bref {
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .image-parent {
+    width: 280px;
+    height: 280px;
+  }
+  .image-parent img {
     border-radius: 50%;
     border: 2px solid #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -127,28 +129,27 @@
 
 /* CSS styles for tablets and mid-sized screens */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  .about h2
-{
-  font-size: 17px;
-}
-.head h2 span{
-  font-size: 15px;
-}
-  .about .line{
-    width: 250px;
-  }
-  .bref p{
-    width:350px;
+  .about h2 {
     font-size: 17px;
   }
-  .about .bref{
+  .head h2 span {
+    font-size: 15px;
+  }
+  .about .line {
+    width: 250px;
+  }
+  .bref .info {
+    width: 350px;
+    font-size: 17px;
+  }
+  .about .bref {
     flex-direction: column;
   }
-  .image-parent{
+  .image-parent {
     width: 350px;
     height: 350px;
   }
-  .image-parent img{
+  .image-parent img {
     border-radius: 50%;
     border: 2px solid #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -156,23 +157,25 @@
     margin-left: 20px;
     object-fit: cover;
   }
-
 }
 
 /* CSS styles for larger tablets and small laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .about .line{
+  .about .line {
     width: 340px;
   }
-  .bref p{
-    width:300px;
+  .bref .info {
+    width: 300px;
     font-size: 15px;
   }
-  .image-parent{
+  .bref .info h1 {
+    font-size: 20px;
+  }
+  .image-parent {
     width: 200px;
     height: 200px;
   }
-  .image-parent img{
+  .image-parent img {
     border-radius: 10px;
     border: 2px solid #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -183,21 +186,21 @@
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-  .about .line{
+  .about .line {
     width: 340px;
   }
-  .bref p{
-    max-width:400px;
-    min-width:300px;
+  .bref .info {
+    max-width: 400px;
+    min-width: 300px;
     font-size: 15px;
   }
-  .image-parent{
+  .image-parent {
     max-width: 300px;
     max-height: 300px;
     min-width: 200px;
     min-height: 200px;
   }
-  .image-parent img{
+  .image-parent img {
     border-radius: 10px;
     border: 2px solid #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
